@@ -1,0 +1,161 @@
+# encoding: utf-8
+
+ru:
+  number:
+    currency:
+      format:
+        delimiter: "'"
+        separator: ','
+        format: '%n %u'
+        precision: 0
+        unit: 'Р.'
+
+  date:
+    formats:
+      default: '%d.%m.%Y'
+
+  devise:
+    failure:
+      invalid: Неправильное имя пользователя или пароль.
+    user_passwords:
+      user:
+        send_instructions: Инструкции по сбросу пароля были высланы Вам по email.
+  logged_in_successfully: Вход выполнен успешно.
+
+  views:
+    pagination:
+      first: Первая
+      previous: Предыдущая
+      next: Следующая
+      last: Последняя
+      truncate: ...
+
+  listing_products: Товары
+
+  product_import: Импорт товаров
+  import_products: Импорт
+  data_file: Файл данных
+  upload: Загрузить
+  product_import_result:
+    success: Данные товаров были успешно загружены
+    failure: 'Не удалось загрузить данные товаров: %{message}'
+
+  filters: Фильтры
+
+  purchase: Купить
+  order_state:
+    contacts: Ваши данные
+
+  star:
+    zero: "0"
+    one: "%{count}"
+    few: "%{count}"
+    many: "%{count}"
+  
+  day:
+    zero: "0 дней"
+    one: "день"
+    few: "%{count} дня"
+    many: "%{count} дней"
+
+  week:
+    zero: "0 недель"
+    one: "неделя"
+    few: "%{count} недели"
+    many: "%{count} недель"
+
+  month:
+    zero: "0 месяцев"
+    one: "месяц"
+    few: "%{count} месяца"
+    many: "%{count} месяцев"
+
+  year:
+    zero: "0 лет"
+    one: "год"
+    few: "%{count} года"
+    many: "%{count} лет"
+
+  shipment_states:
+    not_started: Не начата
+
+  contacts: Ваши данные
+  delivery_instructions: Дополнительно
+  person_name: ФИО
+
+  news_items: Новости
+  news_item: Новость
+  add_news_item: Добавить новость
+  news_item_new: Добавить новость
+  news_item_edit: Изменить новость
+  listing_news_items: Новости
+  news_item_category: Категория
+  news_item_active_from: Действует с
+  news_item_active_till: Действует по
+  news_item_title: Заголовок
+  news_item_contents: Текст
+  news_item_image: Изображение
+
+  advertisements: Акции
+  advertisement: Акция
+  add_advertisement: Добавить акцию
+  advertisement_new: Добавить акцию
+  advertisement_edit: Редактировать акцию
+  advertisement_title: Название акции
+  advertisement_link: Ссылка
+  advertisement_vertical_image: Вертикальное изображение
+  advertisement_horizontal_image: Горизонтальное изображение 
+  
+  bookmark: В закладки
+  in_bookmarks: В закладках
+
+  review:
+    zero: '0 отзывов'
+    one: '1 отзыв'
+    few: '%{count} отзыва'
+    many: '%{count} отзывов'
+
+  errors:
+    messages:
+      not_saved: ''
+
+  errors_prohibited_this_record_from_being_saved:
+    one: '1 ошибка не позволяет сохранить запись в базе'
+    few: '%{count} ошибки не позволяют сохранить запись в базе'
+    many: '%{count} ошибок не позволяют сохранить запись в базе'
+
+  activerecord:
+    attributes:
+      spree/order:
+        name: ФИО
+        phone: Телефон
+
+      spree/user:
+        password: Пароль
+
+      spree/review:
+        rating: Оценка
+        name: Имя
+        title: Заголовок
+        pros: Достоинства
+        cons: Недостатки
+        review: Комментарий
+        usage_period_value: Опыт использования
+        usage_period_unit: Размерность опыта использования
+
+    errors:
+      models:
+        spree/news_item:
+          attributes:
+            category_id:
+              blank: 'Категория обязательна для заполнения'
+            title:
+              blank: 'Заголовок обязателен для заполнения'
+            active_from:
+              blank: 'Дата обязательна для заполнения'
+            active_till:
+              blank: 'Дата обязательна для заполнения'
+        spree/user:
+          attributes:
+            email:
+              not_found: 'не найден'
